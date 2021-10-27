@@ -5,6 +5,9 @@ public class Loop{
 		int i;
 		int start;
 		int stop;
+		int user1;
+		int user2;
+		int user3;
 		//print all numbers between 1 and 100
 		for(i=1; i<=100; i=i+1){
 			System.out.println(i);
@@ -37,6 +40,14 @@ public class Loop{
 		}
 		else{
 			System.out.println("Those numbers are the same!");
+		}
+		System.out.println("\n\n\n\n\n");
+		//take in all three parameters from user
+		user1=Integer.parseInt(JOptionPane.showInputDialog(null, "Enter starting number"));
+		user2=Integer.parseInt(JOptionPane.showInputDialog(null, "Enter finishing number"));
+		user3=Integer.parseInt(JOptionPane.showInputDialog(null, "Enter desired increment"));
+		for(i=user1; i<=user2; i=i+user3){
+			System.out.println(i);
 		}
 	}
 }

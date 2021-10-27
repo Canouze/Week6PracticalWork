@@ -49,5 +49,12 @@ public class Loop{
 		for(i=user1; i<=user2; i=i+user3){
 			System.out.println(i);
 		}
+		System.out.println("\n\n\n\n\n");
+		//loop that takes in 5 numbers and outputs the sum
+		int answer=0;
+		for(i=1; i<=5; i=i+1){
+			answer=answer+Integer.parseInt(JOptionPane.showInputDialog(null, "Enter a number"));
+		}
+		System.out.println(answer);
 	}
 }
